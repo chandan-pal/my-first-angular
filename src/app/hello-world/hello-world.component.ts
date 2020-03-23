@@ -12,4 +12,8 @@ export class HelloWorldComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addNumbers(a:number, b:number) {
+    return a + b;
+  }
+
 }
