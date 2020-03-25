@@ -1,0 +1,12 @@
+<div class="card" style="width:400px;">
+    <div class="card-body">
+        <h1 class="card-title">{{ user.name }}</h1>
+        <h3>{{ user.title }}</h3>
+        <div class="card-text">{{ user.address }}
+            <div>
+                <div>Phone:</div>
+                <div *ngFor="let phoneNumber of user.phone">{{ phoneNumber }}</div>
+            </div>
+        </div>
+    </div>
+</div>
