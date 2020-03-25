@@ -8,6 +8,7 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { DateComponent } from './date/date.component';
 import { AddressCardComponent } from './address-card/address-card.component';
 import { ViewModule } from './view/view.module';
+import { DateService } from './date.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { ViewModule } from './view/view.module';
     AppRoutingModule,
     ViewModule
   ],
-  providers: [],
+  providers: [DateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

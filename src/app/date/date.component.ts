@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DateService } from '../date.service'
 
 @Component({
   selector: 'app-date',
@@ -10,10 +11,9 @@ export class DateComponent implements OnInit {
   message : string = "New date message!"
   date : string = new Date().toDateString();
 
-  constructor() {
+  constructor(private dateService: DateService) {
     setInterval(() => {
-      let curDate = new Date();
-      this.date = curDate.toDateString() + "  " + curDate.toLocaleTimeString();
+      this.date = dateService.getCurrentDate();
     }, 1000);
    }
 
