@@ -1,12 +1,11 @@
-<div class="card" style="width:400px;">
-    <div class="card-body">
-        <h1 class="card-title">{{ user.name }}</h1>
-        <h3>{{ user.title }}</h3>
-        <div class="card-text">{{ user.address }}
-            <div *ngIf="user.phone.length > 0">
-                <div>Phone:</div>
-                <div *ngFor="let phoneNumber of user.phone">{{ phoneNumber }}</div>
-            </div>
+<div class="address-card">
+    <h1 class="name">{{ user.name }}</h1>
+    <h3 class="title">{{ user.title }}</h3>
+    <div>
+        <p class="adderess">{{ user.address }}</p>
+        <div class="phone" *ngIf="user.phone.length > 0">
+            <p>Phone:</p>
+            <p *ngFor="let phoneNumber of user.phone">{{ phoneNumber }}</p>
         </div>
     </div>
 </div>
