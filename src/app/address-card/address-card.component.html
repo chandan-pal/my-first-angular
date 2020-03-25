@@ -3,7 +3,7 @@
         <h1 class="card-title">{{ user.name }}</h1>
         <h3>{{ user.title }}</h3>
         <div class="card-text">{{ user.address }}
-            <div>
+            <div *ngIf="user.phone.length > 0">
                 <div>Phone:</div>
                 <div *ngFor="let phoneNumber of user.phone">{{ phoneNumber }}</div>
             </div>
