@@ -14,12 +14,18 @@ export class AddressCardComponent implements OnInit {
   @Input('user')
   user : User;
 
+  isCollapsed : boolean = true;
+
   constructor() {
     
    }
 
   ngOnInit(): void {
     
+  }
+
+  toggleCollapse() : void {
+    this.isCollapsed = !this.isCollapsed;
   }
 
 }
