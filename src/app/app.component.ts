@@ -9,6 +9,8 @@ import { User } from './address-card/user.model';
 export class AppComponent {
   title = 'New';
   userObj: User;
+  inputText = "Initial Value";
+
   constructor () {
     this.userObj = new User();
     this.userObj.name = "Chandan Pal";
