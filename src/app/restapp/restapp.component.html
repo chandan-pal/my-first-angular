@@ -1,0 +1,9 @@
+<div class="restapp">
+    User Name: <input type="text" [(ngModel)]="userName" />
+    <button (click)="search()">Search</button>
+    <div class="address-card" *ngIf="githubUserDetails">
+        <h1 class="name">{{ githubUserDetails.name }}</h1>
+        <h3 class="title">{{ githubUserDetails.bio }}</h3>
+        <p class="adderess">{{ githubUserDetails.location }}</p>
+    </div>
+</div>
