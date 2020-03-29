@@ -1,3 +1,7 @@
+<!-- navigation links -->
+<a *ngFor="let link of navLinks" [routerLink]="link.url"><div>{{link.label}}</div></a>
+
+
 <app-header></app-header>
 <app-hello-world></app-hello-world>
 <!-- <app-date></app-date> -->
@@ -9,4 +13,5 @@
 <app-restapp></app-restapp> -->
 
 <!-- Routing Placeholder -->
+<p></p>
 <router-outlet></router-outlet>

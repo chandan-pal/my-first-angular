@@ -11,6 +11,11 @@ export class AppComponent {
   userObj: User;
   inputText = "Initial Value";
 
+  navLinks = [
+    {label: "Date App", url: "date"},
+    {label: "Github App", url: "githubapp"}
+  ];
+
   constructor () {
     this.userObj = new User();
     this.userObj.name = "Chandan Pal";
